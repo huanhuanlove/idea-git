@@ -8,15 +8,20 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * description
  *
- * @author mi_huaian.kang 2022/08/30 11:12
+ * @author mi_huaian.kang 2022/08/30 11:15
  */
 @Slf4j
 @RestController
-@RequestMapping("demo1")
-public class DemoController {
+@RequestMapping("demo2")
+public class Demo2Controller {
 
     @PostMapping("demo1")
     public String demo1(String name) {
+        return name;
+    }
+
+    @PostMapping("demo2")
+    public String demo2(String name, Integer age) {
         return name;
     }
 
