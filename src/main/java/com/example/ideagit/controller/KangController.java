@@ -20,4 +20,16 @@ public class KangController {
         log.info("参数为：{}", name);
         return name;
     }
+
+    @PostMapping("demo2")
+    public String demo2(String name) {
+        log.info("参数name：{}", name);
+        return name;
+    }
+
+    @PostMapping("demo3 ")
+    public String demo3(String name) {
+        log.info("name3:{}", name);
+        return name;
+    }
 }
