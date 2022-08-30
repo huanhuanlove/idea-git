@@ -20,4 +20,16 @@ public class DemoController {
         return name;
     }
 
+    @PostMapping("demo2 ")
+    public String demo2(String name) {
+        log.info("name2:{}", name);
+        return name;
+    }
+
+    @PostMapping("demo3 ")
+    public String demo3(String name) {
+        log.info("name3:{}", name);
+        return name;
+    }
+
 }

@@ -43,4 +43,10 @@ public class Demo2Controller {
         return name;
     }
 
+    @PostMapping("demo6 ")
+    public String demo6(String name) {
+        log.info("name6:{}", name);
+        return name;
+    }
+
 }
