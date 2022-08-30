@@ -17,6 +17,7 @@ public class Demo2Controller {
 
     @PostMapping("demo1")
     public String demo1(String name) {
+        log.info("name:{}", name);
         return name;
     }
 
